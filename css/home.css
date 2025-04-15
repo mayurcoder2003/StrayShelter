@@ -1,0 +1,223 @@
+#img{
+    width: 100%;
+    height: 100%; 
+    position: fixed; 
+    opacity: 0.8;
+}
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  line-height: 90vh;
+}
+
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+
+* {
+  font-family: "Cabin", sans-serif;
+  overflow-x: hidden;
+}
+
+#cardshere {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+#centerCards{
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#carouselExampleControls{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-top: 2%;
+  width: 90%;
+}
+
+.navbar-toggler {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5.5rem;
+  width: 30px;
+  height: 30px;
+}
+#logo {
+  height: 3rem;
+  width: 13rem;
+}
+
+#navbarSupportedContent{
+  padding-left: 45rem;
+}
+.nav-link {
+  font-weight: 600;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+  color: black;
+}
+.nav-link:hover {
+  transition: 0.8s;
+  font-weight: 900;
+  border-radius: 5px;
+  background-color: #2bc1e77a;
+}
+.card-img-top {
+  max-height: 200px;
+  transition: 1s;
+}
+
+#footer {
+    width: 100%;
+    padding: 30px;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  font-weight: 500;
+  position: absolute;
+
+  font-family: "Roboto", sans-serif;
+}
+#ftext {
+  color: rgb(255, 255, 255);
+}
+#line {
+  background-color: #eeccff;
+}
+
+#upcardstext {
+  /* font-family: 'Caveat', cursive; */
+  position: relative ;
+  text-align: center;
+  letter-spacing: 0.2pc;
+  font-weight: 900;
+  vertical-align: baseline;
+  color: #604020da;
+  font-size: 2.5rem;
+}
+.iconshere {
+  padding: 0px 6px;
+}
+.button {
+  /* align-items: center; */
+  margin-top: 50px;
+  background-color: white;
+  border: black solid 1px;
+  padding: 4px 20px;
+  border-radius: 4px;
+  color: black;
+  /* border: none; */
+  text-decoration: none;
+}
+.button:hover {
+  /* background-color: #e6f0ff; */
+  border: none;
+  /* padding: 6px 24px; */
+  background-color: blue;
+  transition: 1s;
+  color: white;
+  box-shadow: 2px 4px #e6e6ff;
+}
+.btext{
+  padding: 3px;
+}
+
+.uimg{
+  margin-top: 15px;
+  margin-bottom:15px ;
+}
+.limg{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.btn-1f:hover::after {
+  height: 75%;
+  opacity: 1;
+}
+.btn-1f::after {
+  width: 101%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background-color: #2bc1e77a;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn::before, .icon-heart::after, .icon-star::after, .icon-plus::after, .icon-file::before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.btn-1f:hover, .btn-1f:active {
+  color: #0e83cd;
+}
+.btn-1f {
+  
+  overflow: hidden;
+}
+.btn-1 {
+  border: 3px solid #fff;
+  color: #fff;
+
+}
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+::after, ::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
